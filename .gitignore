@@ -3,4 +3,3 @@ logs
 .env
 database.sql
 .vscode
-middleware

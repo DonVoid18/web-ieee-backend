@@ -1,10 +1,14 @@
 const express = require("express");
+require("express-async-errors");
 const path = require("path");
 const app = express();
 const port = 3000;
 const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logger");
+const errorHandler = require("./middleware/errorHandler");
 
+app.use(logger);
 app.use(cors(corsOptions));
 app.use(express.json());
 // routes
@@ -25,3 +29,5 @@ app.all("*", (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+app.use(errorHandler);

@@ -11,6 +11,7 @@ const errorHandler = require("./middleware/errorHandler");
 app.use(logger);
 app.use(cors(corsOptions));
 app.use(express.json());
+
 // routes
 app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/", require("./routes/root"));

@@ -1,7 +1,7 @@
 const { pool } = require("../config/db");
 const getAllMembers = async (req, res) => {
   try {
-    const [rows] = await pool.query("SELECT * FROM users");
+    const [rows] = await pool.query("SELECT * FROM miembros");
     res.json(rows);
   } catch (error) {
     console.error(error);

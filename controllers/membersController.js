@@ -36,13 +36,22 @@ const newSoliMembers = async (req, res) => {
 };
 const registerMember = async (req, res) => {
   try {
-    const { name, lastName, address, email, dni, numberPhone } = req.body;
+    const { name, lastName, address, email, dni, numberPhone, anioRegister } =
+      req.body;
 
     // const image = req.file?.filename;
     // const imageUrl = req.file?.path;
 
     // Confirm data
-    if (!name || !lastName || !address || !email || !dni || !numberPhone) {
+    if (
+      !name ||
+      !lastName ||
+      !address ||
+      !email ||
+      !dni ||
+      !numberPhone ||
+      !anioRegister
+    ) {
       // if (imageUrl) {
       //   // Eliminar la imagen del servidor
       //   fs.unlink(imageUrl, (err) => {
@@ -63,8 +72,8 @@ const registerMember = async (req, res) => {
 
     // Create and store the new user
     const [result] = await pool.query(
-      "INSERT INTO miembros (name, lastName, address, email, dni, numberPhone) VALUES (?, ?, ?, ?, ?, ?)",
-      [name, lastName, address, email, dni, numberPhone]
+      "INSERT INTO miembros (name, lastName, address, email, dni, numberPhone, anioRegister) VALUES (?, ?, ?, ?, ?, ?, ?)",
+      [name, lastName, address, email, dni, numberPhone, anioRegister]
     );
 
     if (result) {

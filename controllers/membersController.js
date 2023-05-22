@@ -36,46 +36,68 @@ const newSoliMembers = async (req, res) => {
 };
 const registerMember = async (req, res) => {
   try {
-    const { name, lastName, address, email, dni, numberPhone, anioRegister } =
-      req.body;
+    // const { name, lastName, address, email, dni, numberPhone, anioRegister } =
+    //   req.body;
 
     // const image = req.file?.filename;
     // const imageUrl = req.file?.path;
 
+    // // Confirm data
+    // if (
+    //   !name ||
+    //   !lastName ||
+    //   !address ||
+    //   !email ||
+    //   !dni ||
+    //   !numberPhone ||
+    //   !anioRegister
+    // ) {
+    //   // if (imageUrl) {
+    //   //   // Eliminar la imagen del servidor
+    //   //   fs.unlink(imageUrl, (err) => {
+    //   //     if (err) console.error(err);
+    //   //   });
+    //   // }
+    //   return res.status(400).json({ message: "All fields are required" });
+    // }
+
+    // // Check for duplicate member
+    // const [rows] = await pool.query(
+    //   "SELECT id FROM miembros WHERE name = ? OR numberPhone = ? OR email= ?",
+    //   [name, numberPhone, email]
+    // );
+    // if (rows.length > 0) {
+    //   return res.status(409).json({ message: "There is a duplicate field" });
+    // }
+
+    // // Create and store the new user
+    // const [result] = await pool.query(
+    //   "INSERT INTO miembros (name, lastName, address, email, dni, numberPhone, anioRegister) VALUES (?, ?, ?, ?, ?, ?, ?)",
+    //   [name, lastName, address, email, dni, numberPhone, anioRegister]
+    // );
+
+    const { cod_ieee, name, lastName, anioRegister } = req.body;
+    console.log(cod_ieee, name, lastName, anioRegister);
     // Confirm data
-    if (
-      !name ||
-      !lastName ||
-      !address ||
-      !email ||
-      !dni ||
-      !numberPhone ||
-      !anioRegister
-    ) {
-      // if (imageUrl) {
-      //   // Eliminar la imagen del servidor
-      //   fs.unlink(imageUrl, (err) => {
-      //     if (err) console.error(err);
-      //   });
-      // }
+    if (!name || !lastName || !anioRegister || !cod_ieee) {
       return res.status(400).json({ message: "All fields are required" });
     }
 
     // Check for duplicate member
     const [rows] = await pool.query(
-      "SELECT id FROM miembros WHERE name = ? OR numberPhone = ? OR email= ?",
-      [name, numberPhone, email]
+      "SELECT id_miembro FROM miembros WHERE name = ? OR cod_ieee = ?",
+      [name, cod_ieee]
     );
     if (rows.length > 0) {
       return res.status(409).json({ message: "There is a duplicate field" });
     }
 
     // Create and store the new user
-    const [result] = await pool.query(
-      "INSERT INTO miembros (name, lastName, address, email, dni, numberPhone, anioRegister) VALUES (?, ?, ?, ?, ?, ?, ?)",
-      [name, lastName, address, email, dni, numberPhone, anioRegister]
-    );
 
+    const [result] = await pool.query(
+      "INSERT INTO miembros (cod_ieee, name, lastName, anioRegister ) VALUES (?, ?, ?, ?)",
+      [cod_ieee, name, lastName, anioRegister]
+    );
     if (result) {
       // Created
       return res.status(201).json({ message: "New member created" });

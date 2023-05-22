@@ -1,8 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 require("express-async-errors");
 const path = require("path");
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
 const { logger } = require("./middleware/logger");
@@ -27,8 +28,8 @@ app.all("*", (req, res) => {
     res.type("txt").send("404 Not Found");
   }
 });
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Example app listening on PORT ${PORT}`);
 });
 
 app.use(errorHandler);

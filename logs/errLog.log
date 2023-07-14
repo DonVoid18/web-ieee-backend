@@ -1,0 +1,65 @@
+20230426	18:20:19	08203f16-0e28-410e-a942-c2a94a1e50ab	Error: connect ECONNREFUSED ::1:3306	GET	/members	http://localhost:5173
+20230428	09:23:00	e699556c-fdc0-421a-9f4d-967cfad97f44	Error: ENOENT: no such file or directory, open 'C:\MIS PROYECTOS\2023\IEEE WEB BACKEND\config\uploads\member-1682691780400.jpg'	POST	/upload	undefined
+20230428	09:23:58	fef7a4a0-85f3-47ef-98dc-9799584ef735	Error: ENOENT: no such file or directory, open 'C:\MIS PROYECTOS\2023\IEEE WEB BACKEND\config\uploads\member-1682691838894.jpg'	POST	/upload	undefined
+20230428	09:24:25	252d81bc-4c65-4067-9dda-9cedbeb57fb7	Error: ENOENT: no such file or directory, open 'C:\MIS PROYECTOS\2023\IEEE WEB BACKEND\config\uploads\member-1682691865937.jpg'	POST	/upload	undefined
+20230428	09:24:42	bc260adc-9d5e-4e9a-b50d-c32fdd1017f7	Error: ENOENT: no such file or directory, open 'C:\MIS PROYECTOS\2023\IEEE WEB BACKEND\config\uploads\member-1682691882830.jpg'	POST	/upload	undefined
+20230501	16:01:20	2cd73cde-48d1-46fc-b95d-089a3aa52d14	Error: connect ECONNREFUSED ::1:3306	POST	/members?file	undefined
+20230501	16:02:16	be750d81-e86e-4694-98af-a0c18a66be4e	Error: connect ECONNREFUSED ::1:3306	POST	/members?file	undefined
+20230501	16:02:25	c13406cc-2079-4a54-aee2-78759f926a61	Error: connect ECONNREFUSED ::1:3306	POST	/members?file	undefined
+20230501	16:02:56	c6e8903b-6b9f-46dd-a240-fcfb17df9456	ReferenceError: imageProfile is not defined	POST	/members?file	undefined
+20230501	16:04:06	88883f01-d1db-42e3-bf71-a6b6014511ec	Error: Column 'imageProfile' cannot be null	POST	/members?file	undefined
+20230501	16:05:21	573f4278-61ec-430f-b429-fa8a266c0cb7	Error: Column 'imageProfile' cannot be null	POST	/members?file	undefined
+20230502	13:39:23	c481ecee-70fc-4886-8e2f-7a3598c70b3b	TypeError: Cannot read properties of undefined (reading 'filename')	POST	/members	undefined
+20230502	13:39:34	dea219a8-b3fc-4c63-adb4-7e7d59d791e2	TypeError: Cannot read properties of undefined (reading 'filename')	POST	/members	undefined
+20230502	13:39:44	14db3b82-730b-4680-adfc-e8f5426f9874	Error: connect ECONNREFUSED ::1:3306	POST	/members	undefined
+20230502	13:44:27	ca8229ee-9e14-47a8-9ad0-4b7aba601c0b	ReferenceError: image is not defined	POST	/members	undefined
+20230502	13:45:05	9b1e3da4-f5fb-4c93-8725-3c4af33d2b08	Error: connect ECONNREFUSED ::1:3306	POST	/members	undefined
+20230502	13:53:13	cae87bfe-5731-4e9d-98ac-56cf8498a005	Error: connect ECONNREFUSED ::1:3306	POST	/members	undefined
+20230502	13:54:23	2671e9cb-9bdb-4067-b201-34fa564694ba	Error: connect ECONNREFUSED ::1:3306	POST	/members	undefined
+20230502	13:54:42	ecf21ce2-c016-4908-a4f3-d36515ae99b6	Error: connect ECONNREFUSED ::1:3306	POST	/members	undefined
+20230502	14:10:43	3e333a89-61eb-4d6f-ba78-73b5e5439d2b	TypeError: Cannot read properties of undefined (reading 'filename')	POST	/members	undefined
+20230502	14:24:29	d4393f97-7ccc-4110-abcb-82107db2da49	Error: connect ECONNREFUSED ::1:3306	POST	/members	undefined
+20230502	14:25:10	b7f1e3ea-bc37-4b5c-8bae-2c0adae33163	ReferenceError: imageProfile is not defined	POST	/members	undefined
+20230502	14:25:13	8ffb39ca-182a-455b-9de5-0b51d586aa9f	ReferenceError: imageProfile is not defined	POST	/members	undefined
+20230502	14:31:09	2f356979-988e-4138-b5a3-b297f27581a8	Error: Column 'name' cannot be null	POST	/members	undefined
+20230502	14:52:13	98744bde-0143-4a55-b09a-4b943a9e9b68	TypeError: Cannot read properties of undefined (reading 'filename')	POST	/members	undefined
+20230502	17:49:02	6381ef0d-f646-4a7c-a229-620f1bb97f30	TypeError: Cannot read properties of undefined (reading 'filename')	POST	/members	undefined
+20230503	09:09:39	7a4174ee-82f7-4839-9bd5-15cccc2c5fac	Error: connect ECONNREFUSED ::1:3306	POST	/members	undefined
+20230503	16:09:59	03f7d686-8036-427d-b023-d70b239850ca	TypeError: Cannot read properties of undefined (reading 'name')	POST	/members	undefined
+20230503	17:02:25	da47418b-e1ef-4b3a-96be-bb39a12bf8bf	TypeError: Cannot read properties of undefined (reading 'filename')	POST	/members	undefined
+20230503	17:28:20	aff84b72-3648-4f7a-bc19-7105937f7335	TypeError: Cannot read properties of undefined (reading 'filename')	POST	/members	undefined
+20230503	17:39:57	76a3609e-bf75-4f7a-a124-65b2c6a8b8aa	MulterError: Unexpected field	POST	/members	undefined
+20230503	17:40:05	224dff92-b282-4f59-b840-8c202e4758ec	MulterError: Unexpected field	POST	/members	undefined
+20230503	17:42:09	ca5a0d36-f59c-4276-9e73-5fb2c7636aba	TypeError: upload is not a function	POST	/members	undefined
+20230503	17:44:36	f0b40b3a-7543-46fb-abf1-8a6c06609ad2	MulterError: Unexpected field	POST	/members	undefined
+20230503	17:46:19	ffcc2839-bbda-421c-81f8-0e51a42c575d	MulterError: Unexpected field	POST	/members	undefined
+20230503	17:49:46	57cf60d1-acf8-4f58-9756-21bc9dc41dcc	MulterError: Unexpected field	POST	/members	undefined
+20230503	17:52:33	01d52ba5-393d-4f68-b72f-6606053271e5	MulterError: Unexpected field	POST	/members	undefined
+20230503	18:09:15	5bfb1240-9467-467c-b10c-615d629cc203	TypeError: Cannot read properties of undefined (reading 'filename')	POST	/members	undefined
+20230503	18:14:01	3fb63379-860e-4bc8-bcb7-9b081be26761	Error: connect ECONNREFUSED ::1:3306	POST	/members	undefined
+20230503	18:16:02	b976b5b3-1999-43fe-9f23-6dc2a1944842	Error: connect ECONNREFUSED ::1:3306	POST	/members	undefined
+20230504	10:37:25	0881ba50-1375-4b5c-87c2-7f36c259ebd7	Error: connect ECONNREFUSED ::1:3306	GET	/members	undefined
+20230521	18:30:36	fcb55703-1adc-47d6-a1c5-232f2f3de190	Error: Not allowed by CORS	GET	/members	http://localhost:4173
+20230521	19:19:50	deec4885-927b-42ff-a70c-a8f958d1f57c	Error: Not allowed by CORS	GET	/members	http://localhost:4173
+20230521	19:24:17	591ff9fa-ae7a-4310-9193-44f9c7500647	Error: Not allowed by CORS	GET	/members	http://localhost:4173
+20230521	19:51:00	6574317d-82dc-466d-8fff-04f1fc028fc9	Error: Not allowed by CORS	GET	/members	http://localhost:4173
+20230521	19:52:10	574401c3-bf4b-46df-85d9-f01b769b9dff	Error: Not allowed by CORS	OPTIONS	/members	https://donvoid18.github.io
+20230521	19:52:10	b346654a-3a2c-4cd6-8fe8-bfde8407377f	Error: Not allowed by CORS	GET	/members	https://donvoid18.github.io
+20230521	21:53:50	f1fdc8c6-8cab-4b92-88c5-44177624838e	Error: Not allowed by CORS	OPTIONS	/members	https://donvoid18.github.io
+20230521	21:53:50	e1ffd12b-cbd3-4076-a521-4a77a8f2f552	Error: Not allowed by CORS	GET	/members	https://donvoid18.github.io
+20230521	21:54:01	e7df32fa-37b9-4837-8f64-2778620a8955	Error: Not allowed by CORS	OPTIONS	/members	https://donvoid18.github.io
+20230521	21:54:01	dbda8b93-c0ca-49db-94fc-b4233b0c7875	Error: Not allowed by CORS	GET	/members	https://donvoid18.github.io
+20230521	21:54:12	aa8b697f-4dbe-4cab-a406-3158c86a88a5	Error: Not allowed by CORS	OPTIONS	/members	https://donvoid18.github.io
+20230521	21:54:12	44624eb9-432a-4ec7-a78b-dd113b6d6420	Error: Not allowed by CORS	GET	/members	https://donvoid18.github.io
+20230521	21:54:15	817da3e7-167f-46e5-8dd9-1542c55d528c	Error: Not allowed by CORS	OPTIONS	/members	https://donvoid18.github.io
+20230521	21:54:15	3ef5e7ef-efa8-419e-942e-57b39bea9cf9	Error: Not allowed by CORS	GET	/members	https://donvoid18.github.io
+20230521	21:54:21	ae37ca7a-f475-4dee-a1e0-ef4431f61b9c	Error: Not allowed by CORS	OPTIONS	/members	https://donvoid18.github.io
+20230521	21:54:21	a714d246-e4e5-49df-a7ca-d77215febafd	Error: Not allowed by CORS	GET	/members	https://donvoid18.github.io
+20230521	21:55:20	309f2ae3-2fd8-41b6-a97d-d84a9455b19d	Error: Not allowed by CORS	OPTIONS	/members	https://donvoid18.github.io
+20230521	21:55:20	ad1a0ba3-f06d-444f-88f3-90df58f2f7f8	Error: Not allowed by CORS	GET	/members	https://donvoid18.github.io
+20230521	21:55:24	fd532aaf-3adf-481c-8905-5bcc4d60cee1	Error: Not allowed by CORS	OPTIONS	/members	https://donvoid18.github.io
+20230521	21:55:24	6b009538-0115-4096-a7b0-aae890ce432e	Error: Not allowed by CORS	GET	/members	https://donvoid18.github.io
+20230521	21:56:05	d4b505a6-5e72-4edf-bb76-fa1326c29c3d	Error: Not allowed by CORS	OPTIONS	/members	https://donvoid18.github.io
+20230521	21:56:05	98dbb32c-a7ae-4873-9885-78b6fbea0686	Error: Not allowed by CORS	GET	/members	https://donvoid18.github.io
+20230521	21:56:35	3eea61d0-9647-402f-a747-5b2059095d0d	Error: Not allowed by CORS	OPTIONS	/members	https://donvoid18.github.io
+20230521	21:56:35	576c2b31-1bcd-4ec4-a39b-86fc9951b61e	Error: Not allowed by CORS	GET	/members	https://donvoid18.github.io
